@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov  1 20:07:42 2019
+
+@author: USER
+"""
+
 print("Hello World")
 
 def test_conditional():
@@ -49,4 +56,62 @@ def test_string_operator():
     print(full_string.replace("full","some"))
     print(full_string.split(" "))
     
-test_string_operator()
+#test_string_operator()
+    
+def test_list():
+    mylist = ['Python_list','Java','10','20']
+    print(mylist)
+    print(mylist[0])
+    mylist[1]='spark'
+    print(mylist)
+    print(len(mylist))
+    mylist.append(30)
+    print(mylist)
+    
+#test_list()
+    
+def string_formatting():
+    name = "John"
+    print("Hello, %s!" %name)
+    age = 23
+    print("%s is %d years old."% (name, age))
+    mylist = [1,2,3]
+    print("A list : %s" % mylist)
+    
+#string_formatting()
+
+def boolean_operators():
+    isSunday = True
+    isHoliday = True
+    if isHoliday and isSunday:
+        print('Sunday is a Funday!!')
+    else:
+        print('Not holiday bro!! Please start working :(')
+    isSunday = False
+    isHoliday = True
+    if isHoliday and isSunday:
+        print('Sunday is a Funday!!')
+    else:
+        print('Not holiday bro!! Please start working :(')
+    isSunday = True
+    isHoliday = False
+    if isHoliday or isSunday:
+        print('Sunday is a Funday!!')
+    else:
+        print('Not holiday bro!! Please start working :(')
+    isSunday = True
+    isHoliday = False
+    if not isHoliday:
+        print('Please start working, it is not holiday!!')
+    else:
+        print('Today is holiday!!')
+        
+boolean_operators()
+
+
+
+
+
+
+        
+        
